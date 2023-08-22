@@ -23,12 +23,12 @@ class MainWindoww(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.bittons = [[self.ui.btn_1,self.ui.btn_2, self.ui.btn_3, self.ui.btn_4],
+        self.buttons = [[self.ui.btn_1,self.ui.btn_2, self.ui.btn_3, self.ui.btn_4],
                         [self.ui.btn_5, self.ui.btn_6, self.ui.btn_7, self.ui.btn_8],
                         [self.ui.btn_9, self.ui.btn_10, self.ui.btn_11, self.ui.btn_12],
                         [self.ui.btn_13, self.ui.btn_14, self.ui.btn_15, self.ui.btn_16]]
 
-        my_list = get_non_repeating_random_list(4, 4)
+        my_list = get_non_repeating_random_list()
         k=0
         for i in range(4):
             for j in range(4):
@@ -79,8 +79,8 @@ class MainWindoww(QMainWindow):
 app = QApplication(sys.argv)
 
 
-main_window = MainWindoww
-main_window.sgo() 
+main_window = MainWindoww()
+main_window.show() 
 
 
 app.exec()
