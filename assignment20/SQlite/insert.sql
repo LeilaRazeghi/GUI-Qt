@@ -1,0 +1,1 @@
+INSERT INTO customers(id,name,city,country) VALUES(200015, "hatami", "Esfahan", "Iran")
