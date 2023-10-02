@@ -1,0 +1,1 @@
+DELET FROM customers WHERE country !="Iran"
